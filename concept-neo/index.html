@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102b2d" />
+    <meta name="description" content="NEO — студия массажа. Концепт сайта." />
+    <title>NEO — студия массажа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="NEO — на главную">
+        <img src="assets/neo-logo.png" width="92" height="46" alt="NEO" />
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#top">О студии</a>
+        <a href="#top">Контакты</a>
+      </nav>
+      <button class="button button--small button--solid" type="button">Записаться</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow"><span></span> NEO — студия массажа</p>
+          <h1 id="hero-title">Массаж,<br />после которого<br /><em>чувствуешь разницу</em></h1>
+          <p class="hero__lead">Профессиональный массаж и индивидуальный подход в спокойной атмосфере NEO</p>
+          <p class="hero__rating">4,7 <span>★</span> на Яндекс Картах · 18 отзывов</p>
+          <div class="hero__actions">
+            <button class="button button--solid" type="button">Записаться онлайн</button>
+            <a class="button button--ghost" href="#services">Смотреть услуги <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__image-wrap">
+            <img src="assets/neo-studio.jpg" width="1024" height="683" fetchpriority="high" alt="Интерьер студии массажа NEO" />
+          </div>
+          <p class="hero__visual-caption"><span>01</span> Пространство для паузы</p>
+          <div class="water-line water-line--hero" aria-hidden="true"></div>
+        </div>
+        <dl class="hero__notes" aria-label="Преимущества студии">
+          <div><dt>01</dt><dd>Индивидуальный<br />подход</dd></div>
+          <div><dt>02</dt><dd>4<br />специалиста</dd></div>
+          <div><dt>03</dt><dd>Славянская, 35<br />3 этаж</dd></div>
+        </dl>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="services__head reveal">
+          <p class="eyebrow"><span></span> Выбор процедуры</p>
+          <div>
+            <h2 id="services-title">Услуги <em>NEO</em></h2>
+            <p>Выберите подходящую процедуру и узнайте подробности перед записью</p>
+          </div>
+        </div>
+        <div class="services__grid" id="servicesGrid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div class="modal" id="serviceModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__backdrop" aria-label="Закрыть окно"></button>
+      <article class="detail-panel" tabindex="-1">
+        <button class="detail-panel__close" type="button" aria-label="Закрыть окно"><span></span><span></span></button>
+        <div class="detail-panel__scroll" id="modalContent"></div>
+        <div class="detail-panel__cta" id="modalCta"></div>
+      </article>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
