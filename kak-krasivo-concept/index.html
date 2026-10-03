@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f7f5">
+  <meta name="description" content="Как красиво — студия маникюра и педикюра в Краснодаре. Аккуратная работа, красивые формы и внимание к каждой детали.">
+  <title>Как красиво — маникюр и педикюр в Краснодаре</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23cf285f'/%3E%3Cpath d='M17 18v28m2-14 13-14m-13 14 14 14m3-28v28m2-14 12-14M38 32l13 14' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Как красиво — на начало страницы"><img src="assets/logo.png" alt="Как красиво — маникюр и педикюр" width="238" height="84"></a>
+        <nav class="header-actions" aria-label="Основная навигация">
+          <a class="nav-link" href="#services">Услуги</a>
+          <button class="button button--small button--dark" type="button" data-book>Записаться</button>
+        </nav>
+      </header>
+
+      <div class="hero-grid" id="top">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Студия маникюра и педикюра</div>
+          <h1 id="hero-title">Маникюр, <em>который</em> хочется рассматривать<span class="headline-dot">.</span></h1>
+          <p class="hero-description">Маникюр и педикюр в студии “Как красиво” — аккуратная работа, красивые формы и внимание к каждой детали.</p>
+          <button class="button button--primary hero-cta" type="button" data-book>Записаться</button>
+
+          <div class="hero-meta">
+            <div class="rating" aria-label="Рейтинг 5 из 5 на основе 56 оценок">
+              <div class="rating-stars" aria-hidden="true">★★★★★</div>
+              <div><strong>5.0</strong><span>56 оценок</span></div>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="address"><strong>Краснодар, ул. Московская, 31</strong><span>20 офис · 4 этаж</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo-frame"><img src="assets/hero.png" alt="Нежный маникюр с глянцевым покрытием" width="464" height="545" fetchpriority="high"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Выберите своё</p><h2 id="services-title">Наши услуги<span class="headline-dot">.</span></h2></div>
+        <p>Продуманные процедуры для красоты ваших рук и ног.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-image"><img src="assets/manicure.png" alt="Яркий розовый маникюр с гель-лаком" loading="lazy" width="300" height="400"><span class="service-number">01</span></div>
+          <div class="service-body"><h3>Комбинированный маникюр + гель-лак</h3><p>Аккуратная обработка ногтей и кутикулы с однотонным покрытием гель-лаком.</p><div class="service-bottom"><strong class="service-price">от 1 100 ₽</strong><div class="service-actions"><button class="button button--card" type="button" data-book="manicure">Записаться</button><button class="details-button" type="button" data-details="manicure">Подробнее</button></div></div></div>
+        </article>
+        <article class="service-card">
+          <div class="service-image"><img src="assets/pedicure.png" alt="Педикюр с нежно-розовым покрытием" loading="lazy" width="303" height="303"><span class="service-number">02</span></div>
+          <div class="service-body"><h3>Комбинированный педикюр + гель-лак</h3><p>Придание формы ногтям, обработка пальцев и покрытие гель-лаком.</p><div class="service-bottom"><strong class="service-price">от 1 500 ₽</strong><div class="service-actions"><button class="button button--card" type="button" data-book="pedicure">Записаться</button><button class="details-button" type="button" data-details="pedicure">Подробнее</button></div></div></div>
+        </article>
+        <article class="service-card">
+          <div class="service-image"><img src="assets/french.png" alt="Французский маникюр с тонкой линией улыбки" loading="lazy" width="304" height="380"><span class="service-number">03</span></div>
+          <div class="service-body"><h3>Французский маникюр</h3><p>Классический френч с аккуратной линией улыбки.</p><div class="service-bottom"><strong class="service-price service-price--addon">+300 ₽ <small>к основному прайсу</small></strong><div class="service-actions"><button class="button button--card" type="button" data-book="french">Записаться</button><button class="details-button" type="button" data-details="french">Подробнее</button></div></div></div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <dialog class="modal" id="details-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Закрыть подробности" data-close>×</button>
+    <div class="modal-grid"><div class="modal-image"><img id="modal-photo" src="assets/manicure.png" alt=""></div><div class="modal-content"><p class="modal-kicker">Услуга студии</p><h2 id="modal-title"></h2><p id="modal-description"></p><div class="modal-price-block"><span>Стоимость</span><div id="modal-prices"></div></div><button class="button button--primary modal-book" type="button" data-modal-book>Записаться</button></div></div>
+  </dialog>
+
+  <dialog class="booking-modal" id="booking-modal" aria-labelledby="booking-title">
+    <button class="modal-close" type="button" aria-label="Закрыть окно записи" data-close>×</button>
+    <p class="modal-kicker">Как красиво</p><h2 id="booking-title">Запись в студию</h2><p id="booking-service"></p><p class="booking-message">Онлайн-запись появится после подключения сервиса салона. Пока вы можете найти студию по адресу:</p><div class="booking-address"><strong>Краснодар, ул. Московская, 31</strong><span>20 офис · 4 этаж</span></div>
+  </dialog>
+</body>
+</html>
